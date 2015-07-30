@@ -1,0 +1,26 @@
+<html ng-app='mainApp'>
+<head>
+	<title>Hello Andy</title>
+</head>
+<body ng-controller='mainCtrl'>
+	<div style='float: left;'>
+		<ul ng-repeat='jedi in starWarsPeople'>
+			<li>{{jedi.name}}</li>
+		</ul>
+	</div>
+
+	<div style='float: left;'>
+		<ul ng-repeat='planet in planets'>
+			<li>{{planet.name}}</li>
+		</ul>
+	</div>
+	
+
+
+
+	<script src='https://code.angularjs.org/1.4.3/angular.js'></script>
+	<script src='app.js'></script>
+	<script src='mainCtrl.js'></script>
+	<script src='service.js'></script>
+</body>
+</html>
